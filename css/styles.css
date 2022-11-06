@@ -297,6 +297,8 @@ img {
 
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
+
+	padding: 40px;
 }
 .modal-button {
 	position: absolute;
@@ -326,7 +328,7 @@ img {
 
 	color: #212121;
 
-	margin-top: 40px;
+	margin: 0;
 	margin-bottom: 12px;
 }
 .modal-icon {
@@ -353,6 +355,7 @@ img {
 	margin-bottom: 10px;
 }
 .form-label {
+	position: relative;
 	color: var(--primary-text-color);
 
 	font-size: 12px;
@@ -378,10 +381,7 @@ img {
 	border-color: var(--accent-color);
 }
 
-.modal-block {
-	position: relative;
-}
-.modal-block:focus-within > .form-modal-icon {
+.form-label:focus-within > .form-modal-icon {
 	fill: var(--accent-color);
 }
 
@@ -392,7 +392,6 @@ img {
 
 	width: 18px;
 	height: 18px;
-	transform: translateY(-50%);
 
 	transition: fill 250ms var(--timing-function);
 }
@@ -434,6 +433,7 @@ textarea::placeholder {
 	letter-spacing: 0.03em;
 
 	color: var(--primary-text-color);
+	cursor: pointer;
 }
 .checkbox {
 	appearance: none;
@@ -480,10 +480,12 @@ textarea::placeholder {
 	letter-spacing: 0.06em;
 
 	transition: background-color 250ms var(--timing-function);
+
+	cursor: pointer;
 }
 .btn:hover,
-.btn:focus{
-	background-color: #188CE8;
+.btn:focus {
+	background-color: #188ce8;
 }
 /* загаловки и текст секций */
 .section-title {
